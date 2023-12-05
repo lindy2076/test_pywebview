@@ -1,4 +1,4 @@
-# wordlexord_webview
+# test_webview
 
 тест [pywebview](https://pywebview.flowrl.com/)
 
