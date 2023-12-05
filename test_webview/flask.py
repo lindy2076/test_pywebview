@@ -12,15 +12,11 @@ def main():
     return render_template("main.html")
 
 
-@flask_app.route('/mcs')
-def guide():
-    return render_template("moscow.html")
-
-
 @flask_app.route('/api/msc/', methods=["GET"])
 def msc():
     data = utils.get_moscow()
     return jsonify(data)
+
 
 @flask_app.route('/api/spb/', methods=["GET"])
 def spb():
