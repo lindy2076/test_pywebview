@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <title>Станции метро</title>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/main.css')}}"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+        <script src="{{url_for('static', filename='js/main.js')}}"></script>
+    </head>
+    <body>
+        <div class="header maincolor">
+            Станции метро <a class="primary toplink animated">Москвы</a> и <a class="accent toplink animated">Петербурга</a>.
+        </div>
+
+        <div class="attention animated">
+            Основано на данных из <a class="primary" href="https://github.com/jarosluv/russian_infrastructure/tree/master" target="_blank">этого репозитория</a>.
+        </div>
+        <div class="section bg2 animated" id="msc_containter">
+            <div style="text-decoration: underline; cursor: pointer" id="msc_button">Москва</div>
+            <div class="bg-white" id="msc_data" style="display: none;">
+                <p></p>
+            </div>
+        </div>
+
+        <div class="section bg4 animated" id="spb_container">
+            <div style="text-decoration: underline; cursor: pointer" id="spb_button">Петербург</div>
+            <div class="bg-white" id="spb_data" style="display: none;">
+                <p></p>
+            </div>
+        </div>
+
+        
+
+        <div class="footer">
+            made by <span title="aleksej kosolapov" id="fname">human</span> on earth in 2023
+        </div>
+        
+    </body>
+    
+</html>
