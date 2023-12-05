@@ -11,5 +11,5 @@ poetry install
 
 ### run
 ```
-poetry run wl_web
+poetry run tw_web
 ```
